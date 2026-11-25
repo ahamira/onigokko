@@ -350,6 +350,7 @@ GameObject:
   m_Component:
   - component: {fileID: 963934390}
   - component: {fileID: 963934389}
+  - component: {fileID: 963934391}
   m_Layer: 0
   m_Name: enemy
   m_TagString: Untagged
@@ -431,6 +432,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &963934391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963934388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a810da2058104654b8e2c7b230d0e930, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OniMove
+  player: {fileID: 1509579205}
+  speed: 2.5
 --- !u!1 &1509579203
 GameObject:
   m_ObjectHideFlags: 0
@@ -441,6 +456,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1509579205}
   - component: {fileID: 1509579204}
+  - component: {fileID: 1509579206}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -522,6 +538,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1509579206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509579203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08bbe1f98ad42b044a1f0cef48039716, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMove
+  speed: 5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
